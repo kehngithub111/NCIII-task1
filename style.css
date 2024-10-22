@@ -1,0 +1,51 @@
+* {
+    font-family: "Poppins", serif;
+    color: #262626;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cf6045;
+    border-radius: 10px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.debug {
+    border: 1px solid #cf6045;
+}
+
+.header-active {
+    background: #262626;
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+    #navbar-wrapper {
+        transform: translateX(100%);
+    }
+
+    #navbar-wrapper.active {
+        transform: translateX(0);
+        transition: all 400ms ease-in-out;
+    }
+
+    #navbar-wrapper.inactive {
+        transform: translateX(100%);
+        transition: all 400ms ease-in-out;
+    }
+}
