@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
     if (navbarWrapper.classList.contains('active')) {
         navbarWrapper.classList.remove('active');
     }
@@ -36,6 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = 'hidden';
         } else {
             navbarWrapper.classList.replace('active', 'inactive');
+            setTimeout(() => {
+                navbarWrapper.classList.remove('inactive');
+            }, 500);
             document.body.style.overflow = 'auto';
         }
     });

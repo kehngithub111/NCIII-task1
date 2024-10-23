@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercies 1</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <main class="bg-gray-100">
+        <header class="px-2 h-[5rem] fixed w-full z-[999]" id="header">
+            <div class="max-w-[1800px] w-full mx-auto h-full flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2">
+                        <img class="size-[50px]" src="./images/logo.png" alt="">
+                        <h1 class="text-[#ffffff] text-2xl font-bold max-[768px]:text-xl max-sm:text-base">Travel
+                            Destination</h1>
+                    </div>
+                </div>
+                <div id="navbar-wrapper"
+                    class="flex flex-1 max-[768px]:fixed max-[768px]:top-[5rem] max-[768px]:p-4 max-[768px]:right-0 max-[768px]:flex-col max-[768px]:w-[300px] max-[768px]:flex-0 max-[768px]:h-[calc(100vh-5rem)] max-[768px]:bg-[#262626] max-sm:w-full">
+                    <div
+                        class="flex flex-1 mx-5 items-center justify-center gap-5 max-[768px]:flex-col max-[768px]:flex-none ">
+                        <a href="/" class="text-[#ffffff] hover:border-b-2 hover:border-b-[#cf6045]">Home</a>
+                        <a href="./aboutus.html" class="text-[#ffffff] hover:border-b-2 hover:border-b-[#cf6045]">About
+                            Us</a>
+                    </div>
+
+                    <div class="flex items-center gap-2 max-[768px]:flex-col max-[768px]:mt-[1rem]">
+                        <a href=""
+                            class="border border-[#DC3812] bg-[#DC3812] py-2 text-[#ffffff] text-sm rounded-md w-[90px] flex items-center justify-center max-[768px]:w-full">Login</a>
+                        <a href=""
+                            class="border border-[#DC3812] py-2 text-[#ffffff] text-sm rounded-md w-[90px] flex items-center justify-center max-[768px]:w-full">Sign
+                            Up</a>
+                    </div>
+                </div>
+
+                <img id="navbarbutton" class="size-[30px] cursor-pointer hidden max-[768px]:block"
+                    src="./images/icons/nav-menu.svg" alt="">
+            </div>
+        </header>
+       
+        <div class="realtive h-[100dvh] w-full">
+            <img class="object-cover w-full h-full" src="./images/aboutus-banner.jpg" alt="">
+        </div>
+    </main>
+</body>
+
+</html>
